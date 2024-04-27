@@ -8,6 +8,6 @@ This is a lightweight containerized [MAVProxy](https://ardupilot.org/mavproxy/in
 cd ~
 git clone https://github.com/ploeffler/Mavproxy
 cd Mavproxy
-docker build -t mavproxy .
+sudo docker build -t mavproxy .
 sudo docker run --device=/dev/ttyUSB0 --name mavproxy --network host -v $(pwd)/logs:/var/log/mavproxy -dt mavproxy --master=udp:ip_of_your_host:14540 --master=/dev/ttyUSB0
 ```
