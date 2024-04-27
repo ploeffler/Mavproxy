@@ -19,5 +19,5 @@ RUN for script in $(ls ./*.sh) ; do \
         echo "SCRIPT: ${script} > /usr/bin/${dest}" >> /var/log/buld.log \
     ; done
 
-ENTRYPOINT [ "run-mavproxy" ]
+ENTRYPOINT [ "run" ]
 CMD [ ]
